@@ -1,0 +1,78 @@
+@import "vars";
+@import "global";
+@import "fonts";
+
+//header
+
+.header{
+    background-color: $primary-color-2;
+
+    &__navbar{
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo a{
+        color: #fff;
+        font-size: 30px;
+    }
+    &__nav{
+
+    }
+    &__menu-list{
+        display: flex;
+    }
+    &__menu-item{
+        padding-right: 20px;
+        position: relative;
+    }
+    &__menu-item:last-child{
+        padding-right: 0px;
+    }
+    &__menu-link{
+        color: #fff;
+        font-size: 16px;
+        opacity: .7;
+        overflow: hidden;
+        transition: .4s;
+    }
+    &__menu-link::before,
+    &__feedback-text::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0;
+        height: 1.5px;
+        background-color: #fff;
+    }
+    &__menu-link:hover::before,
+    &__feedback-text:hover::before{
+        width: 100%;
+    }
+    &__menu-link:hover,
+    &__feedback-text:hover{
+        opacity: 1;
+    }
+    &__menu-link::before,
+    &__feedback-text::before{
+        transition: 0.35s;
+    }
+    &__feedback{
+        display: flex;
+        flex-direction: column;
+    }
+    &__phone{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 5px;
+    }
+    &__feedback-text{
+        position: relative;
+        color: #fff;
+        opacity: .7;
+        text-align: end;
+    }
+}
