@@ -159,3 +159,72 @@
         height: 20px;
     }
 }
+
+.faq{
+    background: #F2F8FC;
+    .accardeon{
+        padding: 50px 0;
+        &__title{
+            margin-bottom: 30px;
+        }
+        input{
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+        .tabs-inner{
+            display: flex;
+        }
+        .tabs {
+            overflow: hidden;
+          }
+          .tab {
+            border-radius: 8px;
+            width: 97%;
+            color: $primary-color-3;
+            overflow: hidden;
+            margin-bottom: 20px;
+            &-label {
+              display: flex;
+              justify-content: space-between;
+              padding: 1em;
+              background: #fff;
+              font-weight: 700;
+              font-size: 16px;
+              cursor: pointer;
+              &:hover {
+                background: #fff;
+              }
+              &::after {
+                content: "\276F";
+                width: 1em;
+                height: 1em;
+                text-align: center;
+                transition: all .35s;
+              }
+            }
+            &-content {
+              max-height: 0;
+              max-width: 950px;
+              overflow: hidden;
+              padding: 0 1em;
+              color: $primary-color-4;
+              background: white;
+              transition: all .35s;
+            }
+          }
+          // :checked
+          input:checked {
+            + .tab-label {
+              background: #fff;
+              &::after {
+                transform: rotate(90deg);
+              }
+            }
+            ~ .tab-content {
+              max-height: 100vh;
+              padding: 1em;
+            }
+          }
+    }
+}
