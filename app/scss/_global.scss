@@ -4,3 +4,16 @@
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.title{
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: $primary-color-4;
+}
+.title span{
+    color: $primary-color-3;
+}
+
