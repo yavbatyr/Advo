@@ -119,3 +119,43 @@
 
     }
 }
+
+.warning{
+    margin-top: 50px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+    }
+    &__info{
+        max-width: 380px;
+        margin-right: 78px;
+    }
+    &__title{
+        margin-bottom: 57px;
+        white-space: nowrap;
+    }
+    &__texts{
+        margin-top: 85px;
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 750px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    &__text:last-child{
+        margin-bottom: 0px;
+    }
+    &__text::after{
+        content: '';
+        background: url("../images/warning-icon.svg") no-repeat;
+        position: absolute;
+        top: 4px;
+        left: -35px;
+        width: 20px;
+        height: 20px;
+    }
+}
