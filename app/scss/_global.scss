@@ -1,12 +1,14 @@
+body,
+head{
+    font-family: $primary-font;
+}
 .container{
     max-width: 1130px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
-
 .title{
-    font-family: 'Play';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;

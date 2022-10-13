@@ -87,6 +87,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 37px;
+    margin-bottom: 30px;
     &__info{
         padding: 45px 0;
     }
@@ -120,8 +121,191 @@
     }
 }
 
+.services {
+    // services__accardeon
+
+    &__accardeon{
+        display: flex;
+    }
+
+    // .services__tab-buttons
+
+    &__tab-buttons {
+        max-width: 400px;
+        background-color: $primary-color-3;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px 0px 0px 10px;
+        padding: 70px 0;
+    }
+
+    // .services__tab-button
+
+    &__tab-button {
+        margin-bottom: 30px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        position: relative;
+        padding: 5px 25px 5px 70px;
+        transition: .2s;
+    }
+    &__tab-button:last-child {
+        margin-bottom: 0;
+    }
+    &__tab-button:nth-child(1)::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 8px;
+        left: 25px;
+        background-image: url('../images/service-icon1.svg');
+    }
+    &__tab-button:nth-child(1):hover::after {
+        content: '';
+        background-image: url('../images/service-icon1_active.svg');
+    }
+    &__tab-button_active:nth-child(1)::after {
+        content: '';
+        background-image: url('../images/service-icon1_active.svg');
+    }
+    &__tab-button:nth-child(2)::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 22px;
+        left: 25px;
+        background-image: url('../images/service-icon2.svg');
+    }
+    &__tab-button:nth-child(2):hover::after {
+        content: '';
+        background-image: url('../images/service-icon2_active.svg');
+    }
+    &__tab-button_active:nth-child(2)::after {
+        content: '';
+        background-image: url('../images/service-icon2_active.svg');
+    }
+    &__tab-button:nth-child(3)::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 22px;
+        left: 25px;
+        background-image: url('../images/service-icon3.svg');
+    }
+    &__tab-button:nth-child(3):hover::after {
+        content: '';
+        background-image: url('../images/service-icon3_active.svg');
+    }
+    &__tab-button_active:nth-child(3)::after {
+        content: '';
+        background-image: url('../images/service-icon3_active.svg');
+    }
+    &__tab-button:nth-child(4)::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 22px;
+        left: 25px;
+        background-image: url('../images/service-icon4.svg');
+    }
+    &__tab-button:nth-child(4):hover::after {
+        content: '';
+        background-image: url('../images/service-icon4_active.svg');
+    }
+    &__tab-button_active:nth-child(4)::after {
+        content: '';
+        background-image: url('../images/service-icon4_active.svg');
+    }
+    &__tab-button:nth-child(5)::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 16px;
+        top: 63px;
+        left: 25px;
+        background-image: url('../images/service-icon5.svg');
+    }
+    &__tab-button:nth-child(5):hover::after {
+        content: '';
+        background-image: url('../images/service-icon5_active.svg');
+    }
+    &__tab-button_active:nth-child(5)::after {
+        content: '';
+        background-image: url('../images/service-icon5_active.svg');
+    }
+    &__tab-button:hover{
+        background: #fff;
+        color: $primary-color-3;
+    }
+    &__tab-button_active{
+        background: $primary-color-6;
+        color: $primary-color-3;
+    }
+
+    // .services__tab-content-wrap
+
+    &__tab-content-wrap {
+        padding: 20px 70px 20px 30px;
+    }
+
+    // .services__tab-content
+
+    &__tab-content {
+        background-color: $primary-color-6;
+    }
+
+    // .services__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 26px;
+        color: $primary-color-5;
+        margin-bottom: 30px;
+    }
+
+    // .services__item
+
+    &__item {
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 30px;
+    }
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+    &__item:after{
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 0px;
+        left: 0px;
+        background: url('../images/check.svg') no-repeat;
+    }
+
+    // .services__item-content
+
+    &__item-content {
+        max-width: 666px;
+        border-radius: 10px;
+        background-color: #fff;
+        padding: 25px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+
 .warning{
     margin-top: 50px;
+    margin-bottom: 60px;
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -177,54 +361,57 @@
         }
         .tabs {
             overflow: hidden;
-          }
-          .tab {
+        }
+        .tab {
             border-radius: 8px;
             width: 97%;
             color: $primary-color-3;
+            line-height: 20px;
             overflow: hidden;
             margin-bottom: 20px;
             &-label {
-              display: flex;
-              justify-content: space-between;
-              padding: 1em;
-              background: #fff;
-              font-weight: 700;
-              font-size: 16px;
-              cursor: pointer;
-              &:hover {
+                display: flex;
+                justify-content: space-between;
+                padding: 1em;
                 background: #fff;
-              }
-              &::after {
-                content: "\276F";
-                width: 1em;
-                height: 1em;
-                text-align: center;
-                transition: all .35s;
-              }
+                font-weight: 700;
+                font-size: 16px;
+                cursor: pointer;
+                &:hover {
+                    background: #fff;
+                }
+                &::after {
+                    content: "\276F";
+                    width: 1em;
+                    height: 1em;
+                    text-align: center;
+                    transition: all .35s;
+                }
             }
             &-content {
-              max-height: 0;
-              max-width: 950px;
-              overflow: hidden;
-              padding: 0 1em;
-              color: $primary-color-4;
-              background: white;
-              transition: all .35s;
+                max-height: 0;
+                max-width: 950px;
+                overflow: hidden;
+                padding: 0 1em;
+                color: $primary-color-4;
+                line-height: 20px;
+                background: #fff;
+                transition: all .35s;
+                font-family: 'Montserrat';
             }
-          }
+        }
           // :checked
-          input:checked {
+        input:checked {
             + .tab-label {
-              background: #fff;
-              &::after {
+                background: #fff;
+                &::after {
                 transform: rotate(90deg);
-              }
+            }
             }
             ~ .tab-content {
-              max-height: 100vh;
-              padding: 1em;
+                max-height: 100vh;
+                padding: 1em;
             }
-          }
+        }
     }
 }
