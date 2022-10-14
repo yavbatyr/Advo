@@ -259,6 +259,13 @@
 
     &__tab-content {
         background-color: $primary-color-6;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: none;
+    }
+
+    .tab-content_active{
+        display: flex;
     }
 
     // .services__title
