@@ -297,6 +297,15 @@
         left: 0px;
         background: url('../images/check.svg') no-repeat;
     }
+    &__item_cross:after{
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 0px;
+        left: 0px;
+        background: url('../images/cross.svg') no-repeat;
+    }
 
     // .services__item-content
 
@@ -307,6 +316,9 @@
         padding: 25px;
         font-size: 12px;
         line-height: 22px;
+    }
+    &__item-content p{
+        margin-bottom: 20px;
     }
 }
 
