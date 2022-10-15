@@ -11,7 +11,6 @@ $(function(){
         var tab = $('.tab-content[data-tab="'+tabName+'"]');
         $('.tab-content').removeClass('tab-content_active');
         tab.addClass('tab-content_active');
-
     });
     // $('.services__tab-button').on('click', function () {
     //     $('.tab-content').css('display', 'flex');
