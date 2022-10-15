@@ -172,6 +172,14 @@
         content: '';
         background-image: url('../images/service-icon1_active.svg');
     }
+    .active{
+        background: $primary-color-6;
+        color: $primary-color-3;
+    }
+    .active::after{
+        content: '';
+        background-image: url('../images/service-icon1_active.svg');
+    }
     &__tab-button:nth-child(2)::after {
         content: '';
         position: absolute;
@@ -241,7 +249,7 @@
         background-image: url('../images/service-icon5_active.svg');
     }
     &__tab-button:hover{
-        background: #fff;
+        background: $primary-color-6;
         color: $primary-color-3;
     }
     &__tab-button_active{

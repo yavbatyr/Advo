@@ -2,6 +2,7 @@ $(function(){
     $('.services__tab-button').on('click',
         function () {
             $('.services__tab-button').removeClass('services__tab-button_active');
+            $('.services__tab-button').removeClass('active');
             $(this).addClass('services__tab-button_active');
         },
     );
@@ -10,8 +11,6 @@ $(function(){
         var tab = $('.tab-content[data-tab="'+tabName+'"]');
         $('.tab-content').removeClass('tab-content_active');
         tab.addClass('tab-content_active');
-
-        console.log(tabName);
 
     });
     // $('.services__tab-button').on('click', function () {
