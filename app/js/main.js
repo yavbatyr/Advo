@@ -11,9 +11,10 @@ $(function(){
         var tab = $('.tab-content[data-tab="'+tabName+'"]');
         $('.tab-content').removeClass('tab-content_active');
         tab.addClass('tab-content_active');
+    })
+    $('.header__burger-btn').on('click', function () {
+        $('.header__burger-line').toggleClass('header__burger-line_active')
+        $('.header__nav-burger').toggleClass('header__nav-burger_active')
     });
-    // $('.services__tab-button').on('click', function () {
-    //     $('.tab-content').css('display', 'flex');
-    //     $(this).css('display', 'none');
-    // });
+
 })
