@@ -16,5 +16,5 @@ $(function(){
         $('.header__burger-line').toggleClass('header__burger-line_active')
         $('.header__nav-burger').toggleClass('header__nav-burger_active')
     });
-
+    
 })
