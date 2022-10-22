@@ -205,7 +205,7 @@
 
     // .services__tab-button
 
-    &__tab-button {
+    &__tab-button{
         margin-bottom: 30px;
         cursor: pointer;
         font-weight: 700;
@@ -391,6 +391,60 @@
     }
     &__item-content p{
         margin-bottom: 20px;
+    }
+}
+
+.services-mobile{
+    display: none;
+    &__tab-button{
+        background: $primary-color-3;
+        color: #fff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-bottom: 30px;
+    }
+    &__tab-button:nth-child(3)::after {
+        background-image: url('../images/service-icon2_active.svg');
+    }
+    &__tab-button:nth-child(3):hover::after {
+        background-image: url('../images/service-icon2_active.svg');
+    }
+    &__tab-button:nth-child(5)::after {
+        background-image: url('../images/service-icon3_active.svg');
+        top: 29px !important;
+        left: 13px;
+        height: 20px;
+    }
+    &__tab-button:nth-child(5):hover::after {
+        background-image: url('../images/service-icon3_active.svg');
+    }
+    &__tab-button:nth-child(7)::after {
+        content: '';
+        position: absolute;
+        top: 25px;
+        left: 13px;
+        height: 20px;
+        width: 20px;
+        background-image: url('../images/service-icon4_active.svg');
+    }
+    &__tab-button:nth-child(7):hover::after {
+        background-image: url('../images/service-icon4_active.svg');
+    }
+    &__tab-button:nth-child(9)::after {
+        content: '';
+        position: absolute;
+        top: 65px;
+        left: 13px;
+        height: 16px;
+        width: 20px;
+        background-image: url('../images/service-icon5_active.svg');
+    }
+    &__tab-button:nth-child(9):hover::after {
+        background-image: url('../images/service-icon5_active.svg');
+    }
+
+    .tab-content_active{
+        display: flex;
     }
 }
 
