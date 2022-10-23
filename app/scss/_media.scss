@@ -84,7 +84,7 @@
     .services-mobile__tab-button{
         background: #fff;
         color: $primary-color-3;
-        padding: 10px 0 10px 50px;
+        padding: 10px 10px 10px 50px;
         margin-bottom: 0;
         border: 1px solid #0263B2;
         border-radius: 5px;
@@ -195,5 +195,16 @@
     }
     .footer__copy{
         padding: 10px 0;
+    }
+}
+
+@media (max-width: 414px) {
+    .warning__text::after{
+        left: 177px;
+    }
+}
+@media (max-width: 375px) {
+    .warning__text::after{
+        left: 157px;
     }
 }
